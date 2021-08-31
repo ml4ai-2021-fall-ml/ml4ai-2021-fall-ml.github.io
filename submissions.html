@@ -60,11 +60,24 @@
 
 <h3>Introduction</h3>
 
-<p>Unless otherwise noted, we will use <a href="https://github.com">GitHub</a> for submitting all assignments.</p>
+<p>Unless otherwise noted, we will use GitHub Classroom, a service of <a href="https://github.com">GitHub</a>, for submitting all assignments.</p>
+
+<p>For each assignment, we will release a link to will provide you access to a repository that will be generated and associated with your github account. This is the repository you will use for the assignment.<p>
+
+<p><b>For this first assignment</b> there is one additional step: Once you have cloned your version of the hw1, send an email cc'ing both instructors (cromanpa94@arizona.edu and claytonm@arizona.edu) with the subject line:
+<pre>
+[ista421-github]
+</pre>
+In the body of the email, give you full name (as you use in the course) and the name of the github account you used to register your repository.
+The reason we ask this is that github accounts do not always provide a person's name, and in order for us to record your grade, we need to know what your github account corresponds to you!</p>
 
 <p>In general, all assignments will involve two components: written portion and programming portion.</p>
 
-<p>Follow the instructions for the specific assignment, versioning <b>only</b> what is specified plus any additional files you create yourself that your code depends on.  We use <a href="https://travis-ci.com">Travis CI</a> for continuous integration to build and test your code. If it fails to run, we won't grade it.</p>
+<p>Follow the instructions for the specific assignment, versioning <b>only</b> what is specified in the homework release instructions plus any additional files you create yourself that your code depends on.</p>
+
+<!-->
+We use <a href="https://travis-ci.com">Travis CI</a> for continuous integration to build and test your code. If it fails to run, we won't grade it.</p>
+-->
 
 <h3> Submission </h3>
 
@@ -78,7 +91,7 @@
 <p><b>Important note:</b> Include <b>comments</b> in your code that explain <em>clearly</em> what your code is doing!</p>
 
 <p>
-  You will implement the  code in the python source files where specified by the assignment's specifications. When you make progress, you will need to <b>commit and push</b> your changes into the repository.
+You will implement your code in the python source files where specified by the assignment's specifications. When you make progress, you will need to <b>commit and push</b> your changes into the repository.
 </p>
 
 <h4 id="written"> Written Portion of Assignments </h4>
@@ -93,19 +106,19 @@ So, for example, if  you are submitting homework 3, then your file will have the
 <pre>
      hw3-answers.pdf
 </pre>
-And can be added to the repository with:
+This .pdf file can be added to the repository with:
 <pre>
-     $ git add hw3-answer.pdf
+     $ git add hw3-answers.pdf
      $ git commit -m "Versioned the written part of my assignment"
      $ git push
 </pre>
 
 <h4> Final submission </h4>
 <p>
-  Your final submission should be pushed into the <tt>master</tt> branch. Every time you make some progress. It is advised that you commit and push your changes into your local repository by running:
+Your final submission should be pushed into the <tt>master</tt> branch. Every time you make some progress, it is advised that you commit and push your changes into your local repository. This is done by running:
 </p>
 <pre>
-  $ git commit -a -m "Insert here a descriptive message for your commit"
+  $ git commit -a -m "<Insert here a descriptive message for your commit>"
   $ git push
 </pre>
 
@@ -118,13 +131,17 @@ And can be added to the repository with:
     $ PYTHONPATH=. pytest
 </pre>
 
-<p>To execute the unit tests included with the assignment. When you're done implementing the excercises, all the tests will pass. Otherwise, you will see an error message that may help you debug your code.</p>
+<p>This will execute the unit tests included with the assignment. When you're done implementing the excercises, all the tests will pass. Otherwise, you will see an error message that may help you debug your code.</p>
 
+<p>We are working on trying to get our GitHub Classroom for this course to also support testing that will occur when you push changes to your assignment repostory. However, this is not yet functional.</p>
+
+<!--
 <h4>Testing with TravisCI</h4>
 
 <p>You can test your code on Travis. For this, you will need to merge your code into the solution branch and push the aformentioned. You can log into <a href="https://travis-ci.com">Travis CI</a> and inspect the status of build and the output of pytest.</p>
 
 <p>Automated testing on Travis takes time to finish and all the builds of all the students are enqued, therefore it is highly encouraged that you <b>start testing early</b> and not do it the night before the due date, as there will a "build jam" in Travis.</p>
+-->
 
 <h3>Requesting feedback on your code</h3>
 
